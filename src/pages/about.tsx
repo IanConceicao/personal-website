@@ -1,9 +1,8 @@
 import Head from "next/head";
-import styles from "@/styles/Projects.module.css";
 
 import Header from "@/components/header";
 
-export default function Projects() {
+export default function About() {
   return (
     <>
       <Head>
@@ -16,9 +15,9 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header currentPage="projects"></Header>
+        <Header currentPage="about"></Header>
         <br></br>
-        Projects
+        About
       </main>
     </>
   );
