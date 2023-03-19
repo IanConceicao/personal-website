@@ -5,20 +5,26 @@
 @font-face {
   font-family: "StolzlBook";
   font-weight: normal;
-  src: url("../../public/StolzlBook/StolzlBook.ttf") format("truetype");
+  src: url("/fonts/StolzlBook/StolzlBook.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gopher";
   font-weight: normal;
-  src: url("../../public/fonts/GopherText/GopherText.otf") format("opentype");
+  src: url("/fonts/GopherText/GopherText.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Gopher";
   font-weight: bold;
-  src: url("../../public/fonts/GopherText/GopherText-Bold.otf")
-    format("opentype");
+  src: url("/fonts/GopherText/GopherText-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/GopherText/Gopher-BoldItalic.otf") format("opentype");
 }
 
 * {
