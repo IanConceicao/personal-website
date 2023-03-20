@@ -1,6 +1,12 @@
 import Head from "next/head";
 import styles from "@/styles/Projects.module.css";
 import picture from "/public/projectImages/640x360.png";
+import tetrisCubePics from "/public/projectImages/tetriscubes.png";
+import omnom from "/public/projectImages/omnom.png";
+import peoplePic from "/public/projectImages/people.png";
+import languageReaderPic from "/public/projectImages/languagereader.png";
+import duckPic from "/public/projectImages/duckhunt.png";
+import nlpPic from "/public/projectImages/nlp.png";
 
 import Header from "@/components/header";
 import ProjectContainer from "@/components/projectContainer";
@@ -10,33 +16,50 @@ export default function Projects() {
   const projectProfiles: {
     title: string;
     img: StaticImageData;
-    description: string;
+    link: string;
+    description?: string;
+    imageWidth?: number;
   }[] = [
-    { title: "Zoomie Roomies", img: picture, description: "web app" },
     {
-      title: "Deep-Q Learning",
-      img: picture,
+      title: "Zoomie Roomies",
+      img: peoplePic,
+      description: "web app",
+      link: "https://github.com/IanConceicao/ZoomieRoomies",
+      imageWidth: 70,
+    },
+    {
+      title: "Tetris 99 Deep Learning",
+      img: tetrisCubePics,
       description: "reinforcement learning",
+      link: "https://github.com/IanConceicao/Tetris-99-Deep-RL",
+      imageWidth: 85,
     },
     {
       title: "Language Reader",
-      img: picture,
+      img: languageReaderPic,
       description: "web app",
+      link: "https://github.com/IanConceicao/language-reader",
+      imageWidth: 86,
     },
     {
       title: "Com2Sense Challenge",
-      img: picture,
+      img: nlpPic,
       description: "natural language processing",
+      link: "https://github.com/IanConceicao/Com2Sense-Challenge",
     },
     {
       title: "Cut the Rope 3D",
-      img: picture,
+      img: omnom,
       description: "javascript game",
+      link: "https://github.com/IanConceicao/Cut-the-Rope-3D",
+      imageWidth: 60,
     },
     {
       title: "Duck Hunt 3D",
-      img: picture,
+      img: duckPic,
       description: "javascript game",
+      link: "https://github.com/IanConceicao/Duck-Hunt-3D",
+      imageWidth: 65,
     },
   ];
   return (
@@ -52,16 +75,20 @@ export default function Projects() {
       </Head>
       <main>
         <Header currentPage="projects"></Header>
-        <div className="flex flex-wrap justify-center w-[98%] sm:w-[95%] md:w-[90%] mx-auto mt-5 sm:mt-8 md:mt-14">
-          {projectProfiles.map(({ title, img, description }) => (
-            <ProjectContainer
-              key={title}
-              projectTitle={title}
-              img={img}
-              alt={title}
-              shortDescription={description}
-            ></ProjectContainer>
-          ))}
+        <div className="flex flex-wrap justify-center w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-14">
+          {projectProfiles.map(
+            ({ title, img, description, link, imageWidth }) => (
+              <ProjectContainer
+                key={title}
+                projectTitle={title}
+                img={img}
+                alt={title}
+                shortDescription={description}
+                link={link}
+                imageWidth={imageWidth}
+              ></ProjectContainer>
+            )
+          )}
         </div>
       </main>
     </>

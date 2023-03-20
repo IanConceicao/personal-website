@@ -17,7 +17,7 @@ export default function About() {
       <main>
         <Header currentPage="about"></Header>
         <br></br>
-        About
+        About page coming soon
       </main>
     </>
   );

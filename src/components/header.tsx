@@ -23,7 +23,7 @@ export default function Header({ currentPage }: HeaderProps) {
           })}
         </div>
         <div className="flex flex-wrap items-end justify-end">
-          <p className="text-4xl md:text-5xl lg:text-6xl text-primaryHeader font-gopher font-bold whitespace-nowrap">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primaryHeader font-gopher font-bold whitespace-nowrap">
             Ian Conceicao
           </p>
           <p className="text-base md:text-xl text-primaryText font-book whitespace-nowrap -mt-2">
