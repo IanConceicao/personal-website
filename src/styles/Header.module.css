@@ -1,7 +1,0 @@
-.page {
-  @apply text-sm sm:text-base md:text-xl text-primaryHeader font-gopher hover:text-secondaryHeader;
-}
-
-.currentPage {
-  @apply text-sm sm:text-base md:text-xl text-primaryHeader font-gopher underline decoration-secondaryHeader;
-}

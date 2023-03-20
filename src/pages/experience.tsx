@@ -16,8 +16,7 @@ export default function Experience() {
       </Head>
       <main>
         <Header currentPage="experience"></Header>
-        <br></br>
-        Experience page coming soon
+        <p className="font-book m-10">Experience page coming soon</p>
       </main>
     </>
   );

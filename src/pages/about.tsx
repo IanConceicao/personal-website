@@ -16,8 +16,7 @@ export default function About() {
       </Head>
       <main>
         <Header currentPage="about"></Header>
-        <br></br>
-        About page coming soon
+        <p className="font-book m-10">About page coming soon</p>
       </main>
     </>
   );
