@@ -1,0 +1,11 @@
+.primaryHeader {
+  @apply text-primaryHeader text-[2.8rem] font-gopher font-bold mb-2 sm:mb-4 mt-5 sm:mt-8;
+}
+
+.secondaryHeader {
+  @apply text-secondaryHeader font-gopher font-bold italic text-2xl md:text-3xl -mb-1 leading-none;
+}
+
+.time {
+  @apply font-book text-primaryText text-lg mb-2;
+}

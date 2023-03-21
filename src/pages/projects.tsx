@@ -75,7 +75,7 @@ export default function Projects() {
       </Head>
       <main>
         <Header currentPage="projects"></Header>
-        <div className="flex flex-wrap justify-center w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-14">
+        <div className="flex flex-wrap justify-center w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-12">
           {projectProfiles.map(
             ({ title, img, description, link, imageWidth }) => (
               <ProjectContainer

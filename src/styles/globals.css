@@ -9,6 +9,18 @@
 }
 
 @font-face {
+  font-family: "StolzlBook";
+  font-weight: bold;
+  src: url("/fonts/StolzlBook/StolzlBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StolzlBook";
+  font-weight: 300;
+  src: url("/fonts/StolzlBook/StolzlLight.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Gopher";
   font-weight: normal;
   src: url("/fonts/GopherText/GopherText.otf") format("opentype");

@@ -1,4 +1,3 @@
-import styles from "@/styles/Header.module.css";
 import Link from "next/link";
 
 interface HeaderProps {
@@ -16,7 +15,7 @@ export default function Header({ currentPage }: HeaderProps) {
             const linkStyle =
               page === currentPage
                 ? "underline decoration-altPrimaryHeader" // Underline current page
-                : "hover:text-altPrimaryHeader"; // On hover highlight other pages
+                : "transition ease-in-out duration-500 hover:text-altPrimaryHeader"; // On hover highlight other pages
             return (
               <p
                 key={page}
