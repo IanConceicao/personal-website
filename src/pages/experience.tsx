@@ -9,16 +9,18 @@ import TechExperience from "@/components/techExperience";
 export default function Experience() {
   const jobs: workExperienceProps[] = [
     {
-      titleAndCompany: "Software Engineering Intern @ Amazon",
+      title: "Software Engineering Intern",
+      company: "Amazon",
       time: "Summer 2022",
       workDone: [
         "Led a cost minimization project for a cache that serves 30 million requests-per-hour for numerous types of Amazon devices",
         "Designed and implemented major infrastructure and software overhauls that reduced the cache cost by 78%, projecting to save the org around $1 million next year and more the following years as the service scales",
-        "Overhauled the cache&apos;s codebase to a federated style architecture to provide seamless interoperability between various device types",
+        "Overhauled the cache's codebase to a federated style architecture to provide seamless interoperability between various device types",
       ],
     },
     {
-      titleAndCompany: "Software Engineering Intern @ Amazon",
+      title: "Software Engineering Intern",
+      company: "Amazon",
       time: "Summer 2021",
       workDone: [
         "Created a web application for owners to more effectively interact with a configuration database containing several tables",
@@ -27,7 +29,8 @@ export default function Experience() {
       ],
     },
     {
-      titleAndCompany: "Undergraduate Researcher @ VCLA UCLA",
+      title: "Undergraduate Researcher",
+      company: "VCLA UCLA",
       time: "Oct 2019 — June 2021",
       workDone: [
         "Developed optimal plans, in real time, for virtual agents to collaborate and cook meals together in 3-D photo realistic kitchens",
@@ -35,7 +38,8 @@ export default function Experience() {
       ],
     },
     {
-      titleAndCompany: "Information Security Intern @ Lumentum",
+      title: "Information Security Intern",
+      company: "Lumentum",
       time: "Summer 2020",
       workDone: [
         "Created a web dashboard providing the Information Security team real time alerting of security events and trends",
@@ -90,14 +94,15 @@ export default function Experience() {
       </Head>
       <main>
         <Header currentPage="experience"></Header>
-        <div className="md:grid md:grid-cols-10 gap-12 w-[94%] lg:w-[92%] mx-auto mb-14">
+        <div className="md:grid md:grid-cols-10 md:gap-12 w-[94%] lg:w-[92%] mx-auto mb-14">
           <div className="md:col-span-6">
             <p className={styles.primaryHeader}>Work</p>
             <div className="space-y-6">
-              {jobs.map(({ titleAndCompany, time, workDone }) => (
+              {jobs.map(({ title, company, time, workDone }) => (
                 <WorkExperience
-                  key={titleAndCompany}
-                  titleAndCompany={titleAndCompany}
+                  key={title + company + time}
+                  title={title}
+                  company={company}
                   time={time}
                   workDone={workDone}
                 ></WorkExperience>
@@ -110,14 +115,14 @@ export default function Experience() {
               B.S. Computer Science @ UCLA
             </p>
             <p className={styles.time}>2018 - 2022</p>
-            <p className="font-book text-primaryText text-lg mb-2">
+            <p className="font-gopher font-medium text-primaryText text-lg mb-2">
               Relevant Electives:
             </p>
             <div className="columns-[9.375rem] sm:mb-4 mb-6">
               {relevantCourses.map((course) => (
                 <p
                   key={course}
-                  className="font-book font-light text-primaryText text-sm mb-2"
+                  className="font-gopher font-light text-primaryText text-sm mb-2"
                 >
                   {course}
                 </p>

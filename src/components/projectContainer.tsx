@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import { useEffect, useState } from "react";
 
 interface ProjectContainerProps {
   projectTitle: string;
@@ -34,7 +33,7 @@ export default function ProjectContainer({
           }
         ></Image>
         {shortDescription && (
-          <p className="w-full text-center text-primaryText font-book">
+          <p className="w-full text-center text-primaryText font-gopher">
             {shortDescription}
           </p>
         )}

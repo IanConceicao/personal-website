@@ -1,21 +1,26 @@
 import styles from "@/styles/Experience.module.css";
 
 export interface workExperienceProps {
-  titleAndCompany: string;
+  title: string;
+  company: string;
   time: string;
   workDone: string[];
 }
 
 export default function WorkExperience({
-  titleAndCompany,
+  title,
+  company,
   time,
   workDone,
 }: workExperienceProps) {
   return (
     <div>
-      <p className={styles.secondaryHeader}>{titleAndCompany}</p>
+      <p className={styles.secondaryHeader}>
+        {`${title} `}
+        <span className="inline-block">@ {company}</span>
+      </p>
       <p className={styles.time}>{time}</p>
-      <ul className="list-disc list-inside font-book text-sm text-primaryText text-justify font-light">
+      <ul className="list-disc list-inside font-gopher font-light text-xs leading-relaxed sm:text-sm sm:leading-relaxed text-primaryText text-justify">
         {workDone.map((work) => (
           <li key={work + time}>{work}</li>
         ))}

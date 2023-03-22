@@ -3,9 +3,9 @@
 }
 
 .secondaryHeader {
-  @apply text-secondaryHeader font-gopher font-bold italic text-2xl md:text-3xl -mb-1 leading-none;
+  @apply text-secondaryHeader font-gopher font-bold italic text-2xl leading-none md:text-3xl md:leading-none;
 }
 
 .time {
-  @apply font-book text-primaryText text-lg mb-2;
+  @apply font-gopher text-primaryText font-medium text-lg mb-2;
 }

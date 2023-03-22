@@ -1,0 +1,7 @@
+.header {
+  @apply text-secondaryHeader font-gopher font-bold italic text-4xl md:text-5xl mb-2 sm:mb-4 mt-5 sm:mt-8;
+}
+
+.paragraphText {
+  @apply text-primaryText font-gopher font-light space-y-2 text-justify;
+}

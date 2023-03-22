@@ -3,38 +3,79 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "StolzlBook";
-  font-weight: normal;
-  src: url("/fonts/StolzlBook/StolzlBook.ttf") format("truetype");
+  font-family: "Gopher";
+  font-weight: 100;
+  src: url("/fonts/GopherText/GopherText-Hairline.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "StolzlBook";
-  font-weight: bold;
-  src: url("/fonts/StolzlBook/StolzlBold.ttf") format("truetype");
+  font-family: "Gopher";
+  font-weight: 100;
+  font-style: italic;
+  src: url("/fonts/GopherText/GopherText-HairlineItalic.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "StolzlBook";
+  font-family: "Gopher";
+  font-weight: 200;
+  src: url("/fonts/GopherText/GopherText-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: 200;
+  font-style: italic;
+  src: url("/fonts/GopherText/GopherText-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
   font-weight: 300;
-  src: url("/fonts/StolzlBook/StolzlLight.ttf") format("truetype");
+  src: url("/fonts/GopherText/GopherText-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Gopher";
-  font-weight: normal;
-  src: url("/fonts/GopherText/GopherText.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  src: url("/fonts/GopherText/GopherText-LightItalic.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Gopher";
-  font-weight: bold;
+  font-weight: 400;
+  src: url("/fonts/GopherText/GopherText-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/fonts/GopherText/GopherText-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: 500;
+  src: url("/fonts/GopherText/GopherText-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: 500;
+  font-style: italic;
+  src: url("/fonts/GopherText/GopherText-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gopher";
+  font-weight: 700;
   src: url("/fonts/GopherText/GopherText-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Gopher";
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
   src: url("/fonts/GopherText/GopherText-BoldItalic.otf") format("opentype");
 }
