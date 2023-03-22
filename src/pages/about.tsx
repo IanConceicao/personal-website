@@ -23,8 +23,8 @@ export default function About() {
             <p className={styles.header}>Hello</p>
             <div className={styles.paragraphText}>
               <p>
-                I am Ian Conceicao, and I am a recent computer science graduate
-                from the University of California, Los Angeles.
+                I am Ian Conceicao, a recent computer science graduate from the
+                University of California, Los Angeles.
               </p>
               <p>
                 I have two summers of full-stack internship experience at
@@ -46,8 +46,8 @@ export default function About() {
               I created this site using Next.js, React, Tailwind CSS, and
               Netlify. I designed this site to be readable on any screen format—
               if that is not your experience, or you have any other feedback,
-              please let me know. Github issues or a plain email would be
-              appreciated. The source code can be found{" "}
+              please let me know through a Github issue or a plain email. The
+              source code can be found{" "}
               <Link
                 href="https://github.com/IanConceicao/personal-website"
                 target="__blank"
