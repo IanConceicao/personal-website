@@ -1,5 +1,7 @@
-## Ian Conceicao's Personal Website
+# Ian Conceicao's Personal Website
 
-Checkout the website at:
+Checkout the site at:
 
-This is a website to showcase some of my projects and experience.
+https://ianconceicao.netlify.app
+
+You can see some of my projects and experience
