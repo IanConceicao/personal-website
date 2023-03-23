@@ -7,11 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint:write": "next lint --cache --fix",
-    "format": "prettier --write \"**/*.{js,ts,tsx}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md}\"",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx,css,md}": "npx tsc --noEmit && npm run lint:write && npm run format"
   },
   "dependencies": {
     "@types/node": "18.15.3",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",

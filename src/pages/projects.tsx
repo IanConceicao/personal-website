@@ -1,5 +1,4 @@
 import Head from "next/head";
-import picture from "/public/projectImages/640x360.png";
 import tetrisCubePics from "/public/projectImages/tetriscubes.png";
 import omnom from "/public/projectImages/omnom.png";
 import peoplePic from "/public/projectImages/people.png";
