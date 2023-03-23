@@ -1,5 +1,4 @@
 import styles from "@/styles/Experience.module.css";
-import Head from "next/head";
 
 import Header from "@/components/header";
 import { workExperienceProps } from "@/components/workExperience";
@@ -83,15 +82,6 @@ export default function Experience() {
   ];
   return (
     <>
-      <Head>
-        <title>Ian&apos;s Portfolio</title>
-        <meta
-          name="description"
-          content="A portfolio website for Software Engineer Ian Conceicao"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <Header currentPage="experience"></Header>
         <div className="md:grid md:grid-cols-10 md:gap-12 w-[94%] lg:w-[92%] mx-auto mb-14">

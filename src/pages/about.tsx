@@ -1,5 +1,4 @@
 import styles from "@/styles/About.module.css";
-import Head from "next/head";
 
 import Header from "@/components/header";
 import Link from "next/link";
@@ -44,15 +43,6 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>Ian&apos;s Portfolio</title>
-        <meta
-          name="description"
-          content="A portfolio website for Software Engineer Ian Conceicao"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <Header currentPage="about"></Header>
         <div className="flex flex-wrap justify-between w-[94%] lg:w-[92%] mx-auto mb-14">

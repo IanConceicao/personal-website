@@ -1,4 +1,3 @@
-import Head from "next/head";
 import tetrisCubePics from "/public/projectImages/tetriscubes.png";
 import omnom from "/public/projectImages/omnom.png";
 import peoplePic from "/public/projectImages/people.png";
@@ -7,23 +6,19 @@ import duckPic from "/public/projectImages/duckhunt.png";
 import nlpPic from "/public/projectImages/nlp.png";
 
 import Header from "@/components/header";
-import ProjectContainer from "@/components/projectContainer";
-import { StaticImageData } from "next/image";
+import ProjectContainer, {
+  ProjectContainerProps,
+} from "@/components/projectContainer";
 
 export default function Projects() {
-  const projectProfiles: {
-    title: string;
-    img: StaticImageData;
-    link: string;
-    description?: string;
-    imageWidth?: number;
-  }[] = [
+  const projectProfiles: ProjectContainerProps[] = [
     {
       title: "Zoomie Roomies",
       img: peoplePic,
       description: "web app",
       link: "https://github.com/IanConceicao/ZoomieRoomies",
       imageWidth: 70,
+      alt: "An icon of happy people standing",
     },
     {
       title: "Tetris 99 Deep Learning",
@@ -31,6 +26,7 @@ export default function Projects() {
       description: "reinforcement learning",
       link: "https://github.com/IanConceicao/Tetris-99-Deep-RL",
       imageWidth: 85,
+      alt: "Tetris Pieces",
     },
     {
       title: "Language Reader",
@@ -38,12 +34,14 @@ export default function Projects() {
       description: "web app",
       link: "https://github.com/IanConceicao/language-reader",
       imageWidth: 86,
+      alt: "A logo depicting Japanese being translated to English",
     },
     {
       title: "Com2Sense Challenge",
       img: nlpPic,
       description: "natural language processing",
       link: "https://github.com/IanConceicao/Com2Sense-Challenge",
+      alt: "A book with an artificial brain on top of it",
     },
     {
       title: "Cut the Rope 3D",
@@ -51,6 +49,7 @@ export default function Projects() {
       description: "javascript game",
       link: "https://github.com/IanConceicao/Cut-the-Rope-3D",
       imageWidth: 60,
+      alt: "A sticker of the main character from Cut the Rope, Om-Nom",
     },
     {
       title: "Duck Hunt 3D",
@@ -58,30 +57,22 @@ export default function Projects() {
       description: "javascript game",
       link: "https://github.com/IanConceicao/Duck-Hunt-3D",
       imageWidth: 65,
+      alt: "A pixel art image of a duck from Duck Hunt",
     },
   ];
   return (
     <>
-      <Head>
-        <title>Ian Conceicao</title>
-        <meta
-          name="description"
-          content="A portfolio website for Software Engineer Ian Conceicao"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <main>
         <Header currentPage="projects"></Header>
         <div className="flex flex-wrap justify-center w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-12 mb-14">
           {projectProfiles.map(
-            ({ title, img, description, link, imageWidth }) => (
+            ({ title, img, description, link, imageWidth, alt }) => (
               <ProjectContainer
                 key={title}
-                projectTitle={title}
+                title={title}
                 img={img}
-                alt={title}
-                shortDescription={description}
+                alt={alt}
+                description={description}
                 link={link}
                 imageWidth={imageWidth}
               ></ProjectContainer>

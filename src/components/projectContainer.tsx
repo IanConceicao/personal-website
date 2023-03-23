@@ -1,20 +1,20 @@
 import Image, { StaticImageData } from "next/image";
 
-interface ProjectContainerProps {
-  projectTitle: string;
+export interface ProjectContainerProps {
+  title: string;
   img: StaticImageData;
   alt: string;
   link: string;
-  shortDescription?: string;
+  description?: string;
   imageWidth?: number;
 }
 
 export default function ProjectContainer({
-  projectTitle,
+  title,
   img,
   alt,
   link,
-  shortDescription,
+  description,
   imageWidth,
 }: ProjectContainerProps) {
   imageWidth = imageWidth ? imageWidth : 90;
@@ -22,7 +22,7 @@ export default function ProjectContainer({
     <div className="group w-full sm:w-1/2 md:w-1/3 justify-center pb-3 md:pb-5 px-3 md:px-5 outline-2">
       <a href={link} target="_blank">
         <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-gopher font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
-          {projectTitle}
+          {title}
         </p>
         <Image
           src={img}
@@ -32,9 +32,9 @@ export default function ProjectContainer({
             "mx-auto w-fill my-2 transition ease-in-out delay-100 group-hover:scale-90 duration-700"
           }
         ></Image>
-        {shortDescription && (
+        {description && (
           <p className="w-full text-center text-primaryText font-gopher">
-            {shortDescription}
+            {description}
           </p>
         )}
       </a>
