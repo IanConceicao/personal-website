@@ -100,3 +100,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.text-hover-effect,
+.text-group-hover-effect {
+  @apply transition ease-in-out duration-500;
+}
+
+.text-hover-effect {
+  @apply hover:text-altPrimaryHeader;
+}
+
+.text-group-hover-effect {
+  @apply group-hover:text-altPrimaryHeader;
+}

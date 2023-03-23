@@ -3,8 +3,13 @@ import Head from "next/head";
 
 import Header from "@/components/header";
 import Link from "next/link";
-import { IconContext } from "react-icons";
-import { FaFileAlt, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import {
+  FaFileAlt,
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaCopy,
+} from "react-icons/fa";
 import IconAndLink, { iconAndLinkProps } from "@/components/iconAndLink";
 
 export default function About() {
@@ -27,8 +32,13 @@ export default function About() {
     {
       title: "Copy Email",
       link: "",
-      icon: <FaEnvelope />,
+      icon: <FaCopy />,
       copyEmail: true,
+    },
+    {
+      title: "Send Email",
+      link: "mailto:iancon234@gmail.com",
+      icon: <FaEnvelope />,
     },
   ];
 
@@ -78,7 +88,7 @@ export default function About() {
               <Link
                 href="https://github.com/IanConceicao/personal-website"
                 target="__blank"
-                className="transition ease-in-out duration-300 hover:text-altPrimaryHeader text-primaryHeader"
+                className="text-hover-effect text-primaryHeader"
               >
                 here
               </Link>

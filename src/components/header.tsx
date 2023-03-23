@@ -15,7 +15,7 @@ export default function Header({ currentPage }: HeaderProps) {
             const linkStyle =
               page === currentPage
                 ? "underline decoration-altPrimaryHeader" // Underline current page
-                : "transition ease-in-out duration-500 hover:text-altPrimaryHeader"; // On hover highlight other pages
+                : "text-hover-effect"; // On hover highlight other pages
             return (
               <p
                 key={page}

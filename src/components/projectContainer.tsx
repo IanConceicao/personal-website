@@ -21,7 +21,7 @@ export default function ProjectContainer({
   return (
     <div className="group w-full sm:w-1/2 md:w-1/3 justify-center pb-3 md:pb-5 px-3 md:px-5 outline-2">
       <a href={link} target="_blank">
-        <p className="transition ease-in-out duration-500 w-full text-center text-secondaryHeader group-hover:text-altPrimaryHeader font-gopher font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
+        <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-gopher font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
           {projectTitle}
         </p>
         <Image
