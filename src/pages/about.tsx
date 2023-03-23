@@ -3,8 +3,35 @@ import Head from "next/head";
 
 import Header from "@/components/header";
 import Link from "next/link";
+import { IconContext } from "react-icons";
+import { FaFileAlt, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import IconAndLink, { iconAndLinkProps } from "@/components/iconAndLink";
 
 export default function About() {
+  const linkInfo: iconAndLinkProps[] = [
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/ian-conceicao-9a20791a4/",
+      icon: <FaLinkedin />,
+    },
+    {
+      title: "GitHub",
+      link: "https://github.com/IanConceicao",
+      icon: <FaGithub />,
+    },
+    {
+      title: "Resume",
+      link: "Ian-Conceicao-Resume-March-23.pdf",
+      icon: <FaFileAlt />,
+    },
+    {
+      title: "Copy Email",
+      link: "",
+      icon: <FaEnvelope />,
+      copyEmail: true,
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -60,10 +87,21 @@ export default function About() {
           </div>
           <div className="w-full md:w-[34%]">
             <p className={styles.header}>Links</p>
-            <p className={styles.paragraphText}>Coming soon</p>
+            <div className="flex flex-col gap-y-2">
+              {linkInfo.map(({ title, link, icon, copyEmail }) => (
+                <IconAndLink
+                  key={title + link}
+                  title={title}
+                  link={link}
+                  icon={icon}
+                  copyEmail={copyEmail}
+                ></IconAndLink>
+              ))}
+            </div>
+
             <p className={styles.header}>References</p>
             <div className={styles.paragraphText}>
-              References are available upon request
+              References are available upon request.
             </div>
           </div>
         </div>
