@@ -6,17 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
-    "type-check": "tsc --pretty --noEmit",
+    "lint:write": "next lint --cache --fix",
     "format": "prettier --write \"**/*.{js,ts,tsx}\"",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.@(ts|tsx)": [
-      "npm run lint",
-      "npm run format",
-      "npm run type-check"
-    ]
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
   },
   "dependencies": {
     "@types/node": "18.15.3",
