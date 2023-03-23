@@ -6,12 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:write": "next lint --cache --fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md}\"",
     "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,css,md}": "npx tsc --noEmit && npm run lint:write && npm run format"
   },
   "dependencies": {
     "@types/node": "18.15.3",
