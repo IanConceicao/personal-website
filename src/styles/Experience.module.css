@@ -1,11 +1,11 @@
 .primaryHeader {
-  @apply text-primaryHeader text-[2.8rem] font-gopher font-bold mb-2 sm:mb-4 mt-5 sm:mt-8;
+  @apply text-primaryHeader text-[2.8rem] font-bold mb-2 sm:mb-4 mt-5 sm:mt-8;
 }
 
 .secondaryHeader {
-  @apply text-secondaryHeader font-gopher font-bold italic text-2xl leading-none md:text-3xl md:leading-none;
+  @apply text-secondaryHeader font-bold italic text-2xl leading-none md:text-3xl md:leading-none;
 }
 
 .time {
-  @apply font-gopher text-primaryText font-medium text-lg mb-2;
+  @apply text-primaryText font-medium text-lg mb-2;
 }

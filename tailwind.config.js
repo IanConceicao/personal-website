@@ -23,7 +23,7 @@ module.exports = {
         primaryText: withOpacity("--color-primary-text"),
       },
       fontFamily: {
-        gopher: ["var(--custom-font-family)", "serif"],
+        gopher: ["Gopher", "serif"],
       },
     },
   },

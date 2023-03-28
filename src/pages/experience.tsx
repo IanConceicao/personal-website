@@ -105,14 +105,14 @@ export default function Experience() {
               B.S. Computer Science @ UCLA
             </p>
             <p className={styles.time}>2018 - 2022</p>
-            <p className="font-gopher font-medium text-primaryText text-lg mb-2">
+            <p className="font-medium text-primaryText text-lg mb-2">
               Relevant Electives:
             </p>
             <div className="columns-[9.375rem] lg:columns-2 sm:mb-4 mb-6">
               {relevantCourses.map((course) => (
                 <p
                   key={course}
-                  className="font-gopher font-light text-primaryText text-sm mb-2"
+                  className="font-light text-primaryText text-sm mb-2"
                 >
                   {course}
                 </p>

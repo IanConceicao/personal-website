@@ -20,7 +20,7 @@ export default function WorkExperience({
         <span className="inline-block">@ {company}</span>
       </p>
       <p className={styles.time}>{time}</p>
-      <ul className="list-disc list-inside font-gopher font-light text-xs leading-relaxed sm:text-sm sm:leading-relaxed text-primaryText sm:text-justify">
+      <ul className="list-disc list-inside font-light text-xs leading-relaxed sm:text-sm sm:leading-relaxed text-primaryText sm:text-justify">
         {workDone.map((work) => (
           <li key={work + time}>{work}</li>
         ))}

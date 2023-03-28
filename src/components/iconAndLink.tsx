@@ -35,7 +35,7 @@ export default function IconAndLink({
     <Link
       href={link}
       target="__blank"
-      className={`w-fit font-gopher text-base md:text-lg transition ease-in-out duration-500  hover:scale-110 ${
+      className={`w-fit text-base md:text-lg transition ease-in-out duration-500  hover:scale-110 ${
         effect && "text-success"
       }   ${!effect && "text-hover-effect text-primaryText"}`}
       onClick={copyToClipBoard}

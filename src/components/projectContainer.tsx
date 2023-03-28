@@ -21,7 +21,7 @@ export default function ProjectContainer({
   return (
     <div className="group w-full sm:w-1/2 md:w-1/3 justify-center pb-3 md:pb-5 px-3 md:px-5 outline-2">
       <a href={link} target="_blank">
-        <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-gopher font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
+        <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
           {title}
         </p>
         <Image
@@ -33,9 +33,7 @@ export default function ProjectContainer({
           }
         ></Image>
         {description && (
-          <p className="w-full text-center text-primaryText font-gopher">
-            {description}
-          </p>
+          <p className="w-full text-center text-primaryText">{description}</p>
         )}
       </a>
     </div>

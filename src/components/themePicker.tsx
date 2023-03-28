@@ -30,7 +30,7 @@ export default function ThemePicker() {
         <button
           key={theme}
           type="button"
-          className={`font-gopher text-center text-sm px-2 py-1 border 
+          className={`text-center text-sm px-2 py-1 border 
            rounded-full ${
              currentTheme.toLowerCase() == theme.toLowerCase()
                ? "text-select border-select"
