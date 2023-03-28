@@ -69,7 +69,7 @@ export default function About() {
                 machine learning roles.
               </p>
             </div>
-            <p className={styles.header}>Tech</p>
+            <p className={styles.header}>This Site</p>
             <p className={styles.paragraphText}>
               I created this site using Next.js, React, Tailwind CSS, and
               Netlify. I designed this site to be readable on any screen format—
