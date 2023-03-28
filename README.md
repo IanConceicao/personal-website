@@ -2,6 +2,6 @@
 
 Checkout the site at:
 
-https://ianconceicao.netlify.app
+<a href="https://ianconceicao.com/" target="__blank">IanConceicao.com</a>
 
 You can see some of my projects and experience

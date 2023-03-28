@@ -8,13 +8,13 @@ export default function Header({ currentPage }: HeaderProps) {
   const pages = ["projects", "experience", "about"];
 
   return (
-    <div className="border-b-[3px] border-b-white bg-headerBackground">
+    <div className="border-b-2 border-b-headerBorder bg-headerBackground">
       <div className="flex justify-between gap-x-4 w-[90%] mx-auto pt-5 sm:pt-7 md:pt-10 pb-3 sm:pb-5 md:pb-8">
         <div className="flex gap-x-1 flex-col sm:flex-row sm:items-center sm:gap-x-3">
           {pages.map((page) => {
             const linkStyle =
               page === currentPage
-                ? "underline decoration-altPrimaryHeader" // Underline current page
+                ? "underline decoration-select" // Underline current page
                 : "text-hover-effect"; // On hover highlight other pages
             return (
               <p

@@ -108,7 +108,7 @@ export default function Experience() {
             <p className="font-gopher font-medium text-primaryText text-lg mb-2">
               Relevant Electives:
             </p>
-            <div className="columns-[9.375rem] sm:mb-4 mb-6">
+            <div className="columns-[9.375rem] lg:columns-2 sm:mb-4 mb-6">
               {relevantCourses.map((course) => (
                 <p
                   key={course}
