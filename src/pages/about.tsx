@@ -101,7 +101,7 @@ export default function About() {
             </div>
 
             <p className={styles.header}>References</p>
-            <div className={styles.paragraphText}>
+            <div className={styles.simpleParagraphText}>
               References are available upon request.
             </div>
             <p className={styles.header}>Themes</p>

@@ -1,7 +1,12 @@
 .header {
-  @apply text-secondaryHeader font-bold italic text-4xl md:text-5xl mb-2 sm:mb-4 mt-5 sm:mt-8;
+  @apply text-secondaryHeader font-bold italic text-4xl lg:text-5xl mb-2 sm:mb-4 mt-5 sm:mt-8;
+}
+
+.simpleParagraphText,
+.paragraphText {
+  @apply text-primaryText font-light space-y-2 text-sm md:text-base;
 }
 
 .paragraphText {
-  @apply text-primaryText font-light space-y-2 text-sm md:text-base sm:text-justify;
+  @apply sm:text-justify;
 }

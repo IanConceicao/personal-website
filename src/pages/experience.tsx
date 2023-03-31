@@ -118,7 +118,7 @@ export default function Experience() {
                 </p>
               ))}
             </div>
-            <p className={styles.primaryHeader}>Technologies</p>
+            <p className={styles.primaryHeader}>Technology</p>
             <div className="space-y-2">
               {technologies.map(({ title, techs }) => (
                 <TechExperience
