@@ -46,8 +46,8 @@ export default function About() {
     <>
       <main>
         <Header currentPage="about"></Header>
-        <div className="flex flex-wrap justify-between w-[94%] lg:w-[92%] mx-auto mb-14">
-          <div className="w-full md:w-[60%] ">
+        <div className="flex flex-wrap gap-x-20 justify-between w-[94%] lg:w-[92%] mx-auto mb-14">
+          <div className="shrink-0 grow basis-[55%]">
             <p className={styles.header}>Hello</p>
             <div className={styles.paragraphText}>
               <p>
@@ -86,7 +86,7 @@ export default function About() {
               .
             </p>
           </div>
-          <div className="w-full md:w-[34%]">
+          <div className="basis-[34%] grow">
             <p className={styles.header}>Links</p>
             <div className="flex flex-col gap-y-2">
               {linkInfo.map(({ title, link, icon, copyEmail }) => (

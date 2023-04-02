@@ -4,7 +4,7 @@
 
 .simpleParagraphText,
 .paragraphText {
-  @apply text-primaryText font-light space-y-2 text-sm md:text-base;
+  @apply text-primaryText font-light space-y-2 text-base;
 }
 
 .paragraphText {

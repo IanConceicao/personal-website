@@ -84,8 +84,8 @@ export default function Experience() {
     <>
       <main>
         <Header currentPage="experience"></Header>
-        <div className="md:grid md:grid-cols-10 md:gap-12 w-[94%] lg:w-[92%] mx-auto mb-14">
-          <div className="md:col-span-6">
+        <div className="flex flex-wrap gap-x-12 justify-between w-[94%] lg:w-[92%] mx-auto mb-14">
+          <div className="shrink-0 grow basis-[55%]">
             <p className={styles.primaryHeader}>Work</p>
             <div className="space-y-6">
               {jobs.map(({ title, company, time, workDone }) => (
@@ -99,7 +99,7 @@ export default function Experience() {
               ))}
             </div>
           </div>
-          <div className="md:col-span-4">
+          <div className="basis-[38%] grow">
             <p className={styles.primaryHeader}>Education</p>
             <p className={styles.secondaryHeader}>
               B.S. Computer Science @ UCLA
@@ -118,7 +118,7 @@ export default function Experience() {
                 </p>
               ))}
             </div>
-            <p className={styles.primaryHeader}>Technology</p>
+            <p className={styles.primaryHeader}>Technologies</p>
             <div className="space-y-2">
               {technologies.map(({ title, techs }) => (
                 <TechExperience

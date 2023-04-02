@@ -3,7 +3,7 @@
 }
 
 .secondaryHeader {
-  @apply text-secondaryHeader font-bold italic text-2xl leading-none md:text-3xl md:leading-none;
+  @apply text-secondaryHeader font-bold italic leading-none text-3xl;
 }
 
 .time {

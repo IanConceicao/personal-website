@@ -17,9 +17,9 @@ export default function ProjectContainer({
   description,
   imageWidth,
 }: ProjectContainerProps) {
-  imageWidth = imageWidth ? imageWidth : 90;
+  imageWidth = imageWidth ? imageWidth : 85;
   return (
-    <div className="group w-full sm:w-1/2 md:w-1/3 justify-center pb-3 md:pb-5 px-3 md:px-5 outline-2">
+    <div className="group">
       <a href={link} target="_blank">
         <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
           {title}

@@ -17,7 +17,7 @@ export default function Projects() {
       img: peoplePic,
       description: "web app",
       link: "https://github.com/IanConceicao/ZoomieRoomies",
-      imageWidth: 70,
+      imageWidth: 67,
       alt: "An icon of happy people standing",
     },
     {
@@ -25,7 +25,7 @@ export default function Projects() {
       img: tetrisCubePics,
       description: "reinforcement learning",
       link: "https://github.com/IanConceicao/Tetris-99-Deep-RL",
-      imageWidth: 85,
+      imageWidth: 75,
       alt: "Tetris Pieces",
     },
     {
@@ -33,7 +33,7 @@ export default function Projects() {
       img: languageReaderPic,
       description: "web app",
       link: "https://github.com/IanConceicao/language-reader",
-      imageWidth: 86,
+      imageWidth: 80,
       alt: "A logo depicting Japanese being translated to English",
     },
     {
@@ -48,7 +48,7 @@ export default function Projects() {
       img: omnom,
       description: "javascript game",
       link: "https://github.com/IanConceicao/Cut-the-Rope-3D",
-      imageWidth: 60,
+      imageWidth: 55,
       alt: "A sticker of the main character from Cut the Rope, Om-Nom",
     },
     {
@@ -64,7 +64,7 @@ export default function Projects() {
     <>
       <main>
         <Header currentPage="projects"></Header>
-        <div className="flex flex-wrap justify-center w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-12 mb-14">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-0 w-[96%] md:w-[94%] lg:w-[92%] mx-auto mt-5 sm:mt-8 md:mt-12 mb-14">
           {projectProfiles.map(
             ({ title, img, description, link, imageWidth, alt }) => (
               <ProjectContainer
