@@ -17,7 +17,7 @@ This website showcases some of my projects, work experience, and other informati
 
 - Dev Framework: `Next.js`
 - UI Framework: `React`
-- Styling Framework: `TailWind CSS`
+- Styling Framework: `Tailwind CSS`
 - Deployment: `Netlify` and `Google Domains`
 
 ## Mobile Friendly
