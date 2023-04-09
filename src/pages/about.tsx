@@ -26,7 +26,7 @@ export default function About() {
     },
     {
       title: "Resume",
-      link: "Ian-Conceicao-Resume-March-23.pdf",
+      link: "Ian-Conceicao-Resume-April-23.pdf",
       icon: <FaFileAlt />,
     },
     {
