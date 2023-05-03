@@ -50,11 +50,9 @@ export default function Experience() {
     {
       title: "Backend",
       techs: [
-        "JavaScript",
-        "TypeScript",
-        "Node.js + Express.js",
-        "Java + Spring",
-        "Python + Flask",
+        "TypeScript and JavaScript (Node.js)",
+        "Java (Spring)",
+        "Python (Django and Flask)",
       ],
     },
     {
