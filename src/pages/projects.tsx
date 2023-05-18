@@ -2,7 +2,7 @@ import tetrisCubePics from "/public/projectImages/tetriscubes.png";
 import omnom from "/public/projectImages/omnom.png";
 import peoplePic from "/public/projectImages/people.png";
 import languageReaderPic from "/public/projectImages/languagereader.png";
-import duckPic from "/public/projectImages/duckhunt.png";
+import chatbot from "/public/projectImages/chatbot.png";
 import nlpPic from "/public/projectImages/nlp.png";
 
 import Header from "@/components/header";
@@ -44,20 +44,20 @@ export default function Projects() {
       alt: "A book with an artificial brain on top of it",
     },
     {
+      title: "Marketing Bot",
+      img: chatbot,
+      description: "chatbot creator",
+      link: "https://github.com/IanConceicao/MarketingBot",
+      imageWidth: 70,
+      alt: "A sticker of a pink and blue robot speaking.",
+    },
+    {
       title: "Cut the Rope 3D",
       img: omnom,
       description: "javascript game",
       link: "https://github.com/IanConceicao/Cut-the-Rope-3D",
       imageWidth: 60,
       alt: "A sticker of the main character from Cut the Rope, Om-Nom",
-    },
-    {
-      title: "Duck Hunt 3D",
-      img: duckPic,
-      description: "javascript game",
-      link: "https://github.com/IanConceicao/Duck-Hunt-3D",
-      imageWidth: 70,
-      alt: "A pixel art image of a duck from Duck Hunt",
     },
   ];
   return (
