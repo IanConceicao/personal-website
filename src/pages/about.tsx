@@ -51,22 +51,24 @@ export default function About() {
             <p className={styles.header}>Hello</p>
             <div className={styles.paragraphText}>
               <p>
-                I am Ian Conceicao, a recent computer science graduate from the
-                University of California, Los Angeles.
+                I’m Ian, a Software Engineer at Amazon Music dedicated to
+                building delightful user experiences for our listeners.
+                Currently, I bridge the gap between frontend products and
+                highly-scaled platforms to launch innovative ad products and
+                monetizeable experiences for Free and Prime Tier users across
+                the world.
               </p>
               <p>
-                I have two summers of full-stack internship experience at
-                Amazon, where I worked on a high-throughput ad-serving platform.
-                Previously, I was an undergraduate researcher focusing on
-                reinforcement learning and embodied AI.
+                I enjoy working across the stack, from designing visual
+                experiences on our mobile app, to architecting the ad-serving
+                engines that personalize music and other sponsored content. More
+                recently, I have become especially passionate about leveraging
+                AI tooling to accelerate developer velocity and push the
+                boundaries of how fans interact with music.
               </p>
               <p>
-                I am passionate about improving backend systems at scale, and
-                creating purposeful user interfaces.
-              </p>
-              <p>
-                Currently, I am pursuing entry-level backend, full-stack, and
-                machine learning roles.
+                If it sounds like I could be a good fit for your team, please
+                reach out to me on LinkedIn or via email.
               </p>
             </div>
             <p className={styles.header}>This Site</p>
