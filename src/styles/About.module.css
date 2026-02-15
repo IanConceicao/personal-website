@@ -1,10 +1,13 @@
+@reference "tailwindcss";
+@reference "./globals.css";
+
 .header {
-  @apply text-secondaryHeader font-bold italic text-4xl lg:text-5xl mb-2 sm:mb-4 mt-5 sm:mt-8;
+  @apply text-secondary-header font-bold italic text-4xl lg:text-5xl mb-2 sm:mb-4 mt-5 sm:mt-8;
 }
 
 .simpleParagraphText,
 .paragraphText {
-  @apply text-primaryText font-light space-y-2 text-base;
+  @apply text-primary-text font-normal space-y-2 text-base;
 }
 
 .paragraphText {

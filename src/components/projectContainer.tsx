@@ -1,8 +1,8 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 export interface ProjectContainerProps {
   title: string;
-  img: StaticImageData;
+  img: string;
   alt: string;
   link: string;
   description?: string;
@@ -15,25 +15,32 @@ export default function ProjectContainer({
   alt,
   link,
   description,
-  imageWidth,
+  imageWidth = 85,
 }: ProjectContainerProps) {
-  imageWidth = imageWidth ? imageWidth : 85;
   return (
     <div className="group">
-      <a href={link} target="_blank">
-        <p className="w-full text-center text-secondaryHeader text-group-hover-effect font-bold italic text-3xl md:text-4xl lg:text-[2.6rem] mb-4">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <p className="text-secondary-header text-group-hover-effect w-full text-center text-2xl mb-2 font-bold italic md:text-4xl lg:text-[2.6rem]">
           {title}
         </p>
-        <Image
-          src={img}
-          alt={alt}
+
+        <div
+          className="relative mx-auto aspect-square transition duration-700 ease-in-out group-hover:scale-90"
           style={{ width: `${imageWidth}%` }}
-          className={
-            "mx-auto w-fill my-2 transition ease-in-out delay-100 group-hover:scale-90 duration-700"
-          }
-        ></Image>
+        >
+          <Image
+            src={img}
+            alt={alt}
+            fill
+            className="object-contain"
+            priority={title === "Zoomie Roomies"} // Optional: load the first project faster
+          />
+        </div>
+
         {description && (
-          <p className="w-full text-center text-primaryText">{description}</p>
+          <p className="text-primary-text mt-4 w-full text-center">
+            {description}
+          </p>
         )}
       </a>
     </div>

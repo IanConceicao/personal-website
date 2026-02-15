@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "Gopher";
@@ -80,57 +78,76 @@
   src: url("/fonts/GopherText/GopherText-BoldItalic.otf") format("opentype");
 }
 
+@theme {
+  --color-background: rgb(var(--raw-background));
+  --color-header-background: rgb(var(--raw-header-background));
+  --color-header-border: rgb(var(--raw-header-border));
+  --color-primary-header: rgb(var(--raw-primary-header));
+  --color-secondary-header: rgb(var(--raw-secondary-header));
+  --color-primary-text: rgb(var(--raw-primary-text));
+  --color-select: rgb(var(--raw-select));
+  --color-success: rgb(var(--raw-success));
+
+  --font-gopher: "Gopher", serif;
+}
+
 @layer base {
-  :root {
-    --color-background: 242, 247, 255;
-    --color-header-background: 235, 243, 255;
-    --color-header-border: 256, 256, 256;
-    --color-primary-header: 15, 88, 214;
-    --color-select: 226, 97, 159;
-    --color-success: 34, 197, 94;
-    --color-secondary-header: 16, 49, 107;
-    --color-primary-text: 20, 33, 61;
-  }
-
-  [data-theme="dark"] {
-    --color-background: 30, 30, 30;
-    --color-header-background: 24, 24, 24;
-    --color-header-border: 50, 50, 50;
-    --color-primary-header: 88, 187, 255;
-    --color-select: 226, 97, 159;
-    --color-success: 99, 255, 129;
-    --color-secondary-header: 235, 235, 235;
-    --color-primary-text: 200, 200, 200;
-  }
-
-  [data-theme="vintage"] {
-    --color-background: 240, 206, 157;
-    --color-header-background: 233, 161, 120;
-    --color-header-border: 256, 256, 256;
-    --color-primary-header: 168, 68, 72;
-    --color-select: 254, 254, 250;
-    --color-success: 105, 130, 105;
-    --color-secondary-header: 122, 62, 101;
-    --color-primary-text: 64, 14, 50;
-  }
-
-  * {
+  *,
+  ::after,
+  ::before {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    @apply selection:bg-select selection:bg-opacity-60;
+  }
+
+  /* LIGHT THEME */
+  :root,
+  [data-theme="default"] {
+    --raw-background: 242, 247, 255;
+    --raw-header-background: 235, 243, 255;
+    --raw-header-border: 256, 256, 256;
+    --raw-primary-header: 15, 88, 214;
+    --raw-secondary-header: 16, 49, 107;
+    --raw-primary-text: 20, 33, 61;
+    --raw-select: 226, 97, 159;
+    --raw-success: 34, 197, 94;
+  }
+
+  /* DARK THEME */
+  [data-theme="dark"] {
+    --raw-background: 30, 30, 30;
+    --raw-header-background: 24, 24, 24;
+    --raw-header-border: 80, 80, 80;
+    --raw-primary-header: 88, 187, 255;
+    --raw-secondary-header: 235, 235, 235;
+    --raw-primary-text: 200, 200, 200;
+    --raw-select: 226, 97, 159;
+    --raw-success: 99, 255, 129;
+  }
+
+  /* VINTAGE THEME */
+  [data-theme="vintage"] {
+    --raw-background: 240, 206, 157;
+    --raw-header-background: 233, 161, 120;
+    --raw-header-border: 64, 14, 50;
+    --raw-primary-header: 168, 68, 72;
+    --raw-secondary-header: 122, 62, 101;
+    --raw-primary-text: 64, 14, 50;
+    --raw-select: 254, 254, 250;
+    --raw-success: 105, 130, 105;
   }
 
   html,
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: "Gopher";
+    font-family: var(--font-gopher);
   }
 
   body {
-    @apply bg-background;
-    @apply transition ease-in-out duration-1000;
+    @apply bg-background text-primary-text antialiased transition-colors duration-1000 ease-in-out;
+  }
+
+  html {
+    @apply selection:bg-select/60;
   }
 
   a {
@@ -139,17 +156,16 @@
   }
 }
 
-@layer components {
-  .text-hover-effect,
-  .text-group-hover-effect {
-    @apply transition ease-in-out duration-500;
-  }
-
+@layer page {
   .text-hover-effect {
-    @apply hover:text-select;
+    @apply transition-colors duration-500 hover:text-select;
   }
 
   .text-group-hover-effect {
-    @apply group-hover:text-select;
+    @apply transition-colors duration-500 group-hover:text-select;
+  }
+
+  .text-enlarge-on-hover-effect {
+    @apply transition-transform duration-500 hover:scale-110;
   }
 }

@@ -40,7 +40,7 @@ export default function ThemePicker() {
            rounded-full ${
              currentTheme == theme.internal
                ? "text-select border-select"
-               : "text-primaryHeader text-hover-effect border-primaryHeader hover:border-select"
+               : "text-primary-header text-hover-effect border-primary-header hover:border-select"
            }`}
           onClick={() => setCurrentTheme(theme.internal)}
         >

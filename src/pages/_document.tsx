@@ -7,11 +7,11 @@ export default function Document() {
       <Head>
         <Script
           id="theme-chooser"
-          src="scripts/theme.js"
+          src="/scripts/theme.js"
           strategy="beforeInteractive"
         />
       </Head>
-      <body>
+      <body className="antialiased">
         <Main />
         <NextScript />
       </body>

@@ -34,10 +34,10 @@ export default function IconAndLink({
   return (
     <Link
       href={link}
-      target="__blank"
-      className={`w-fit text-base md:text-lg transition ease-in-out duration-500  hover:scale-110 ${
+      target="_blank"
+      className={`w-fit text-base md:text-lg ${
         effect && "text-success"
-      }   ${!effect && "text-hover-effect text-primaryText"}`}
+      }   ${!effect && "text-hover-effect text-enlarge-on-hover-effect text-primary-text"}`}
       onClick={copyToClipBoard}
     >
       <span className="inline-block align-middle">{icon}</span>

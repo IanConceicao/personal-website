@@ -1,11 +1,14 @@
+@reference "tailwindcss";
+@reference "./globals.css";
+
 .primaryHeader {
-  @apply text-primaryHeader text-[2.8rem] font-bold mb-2 sm:mb-4 mt-5 sm:mt-8;
+  @apply text-5xl text-primary-header font-bold mb-2 sm:mb-4 mt-5 sm:mt-8;
 }
 
 .secondaryHeader {
-  @apply text-secondaryHeader font-bold italic leading-none text-3xl;
+  @apply text-3xl text-secondary-header font-bold italic leading-none;
 }
 
 .time {
-  @apply text-primaryText font-medium text-lg mb-2;
+  @apply text-primary-text font-medium text-lg mb-2;
 }

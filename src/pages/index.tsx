@@ -1,2 +1,5 @@
 import Projects from "./projects";
-export default Projects;
+
+export default function Home() {
+  return <Projects />;
+}
