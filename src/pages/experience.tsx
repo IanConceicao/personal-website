@@ -8,85 +8,109 @@ import TechExperience from "@/components/techExperience";
 // 1. Move static data outside to optimize rendering and keep the component body clean
 const JOBS: workExperienceProps[] = [
   {
-    title: "Software Engineer",
-    company: "Amazon Music",
-    time: "Nov 2024 to Present",
+    title: "Software Development Engineer II",
+    company: "Amazon Music · Ad Monetization",
+    time: "Dec 2024 to Present",
     workDone: [
-      "Led mobile upsell strategy for India's upcoming Unlimited tier, designing 12+ customer experiences amid evolving requirements.",
-      "Drove end-to-end delivery of ML-powered ad break personalization system, achieving 2% boost in ad revenue.",
-      "Architected and launched Sponsored Sessions experiments, enabling 30 minutes of ad-free listening.",
-      "Built org's first cloud knowledge base with semantic search, accelerating engineer onboarding.",
+      "Extending Amazon's ad tech stack to serve video ads on Amazon Music, a projected $10M annual revenue opportunity.",
+      "Designed the architecture for Amazon Music's first display ads platform, a $4M+ opportunity, connecting the home-page content stack to ad serving.",
+      "Utilized learned customer behavior to serve extended ad-pods to ad-tolerant customers, raising total ad revenue for Amazon Music by 2.3% in the US.",
+      "Designed and launched a Sponsored Sessions experiment, letting advertisers sponsor 30 minutes of ad-free listening on Alexa and mobile.",
+      "Led 12+ upsells across iOS, Android, and Fire TV for the India Free Tier launch, mentoring 2 engineers and contributing to 6.8K more weekly sign-ups.",
+      "Co-built a GenAI ticket triage system that de-duplicates, re-routes, and triages tickets, closing 281K duplicate tickets in the first week.",
+      "Built a team-wide AI agent platform with skills and a custom code and doc knowledge base, accelerating onboarding and development.",
     ],
   },
   {
-    title: "Software Engineer",
-    company: "Amazon Ads",
+    title: "Software Development Engineer",
+    company: "Amazon Ads · Display Ad Serving",
     time: "Sept 2023 to Nov 2024",
     workDone: [
-      "Led migration of 60k+ TPS ad traffic across multiple ad products for FireTV.",
-      "Spearheaded creation of dedicated ad serving infrastructure, reducing ad timeouts by 82%.",
-      "Designed and implemented compliance orchestration system for EU DMA and child-profile filtering.",
-      "Overhauled integration test suite, reducing E2E test setup time from hours to minutes.",
+      "Led migration of 4 Fire TV display ad formats (60K+ TPS) from a legacy ad server to an OpenRTB exchange, enabling deals, auctions, and compliance.",
+      "Launched an Asia-Pacific ad server region next to the ad exchange, cutting Fire TV ad timeouts 82% and serving 15M more ads in the first month.",
+      "Built a compliance layer across 3 privacy services enforcing EU DMA consent, child-profile ad filtering, and Quebec cookie consent.",
+      "Overhauled the integration test suite, reducing E2E test setup time from hours to minutes.",
     ],
   },
   {
     title: "Software Engineering Intern",
     company: "Amazon Ads",
-    time: "Summer 2022",
+    time: "June 2022 to Sept 2022",
     workDone: [
-      "Led cost minimization project for a cache serving 30 million requests-per-hour.",
-      "Reduced cache cost by 78%, projecting to save the org around $1 million per year.",
-      "Overhauled codebase to federated style architecture for cross-device interoperability.",
+      "Led a cost minimization project for a device cache serving 30 million requests per hour across numerous types of Amazon devices.",
+      "Designed and implemented infrastructure and software overhauls that cut cache cost by 78%, projecting $1 million in annual savings for the org, and more as the service scales.",
+      "Overhauled the cache's codebase to a federated-style architecture for seamless interoperability between device types.",
     ],
   },
   {
     title: "Software Engineering Intern",
     company: "Amazon Ads",
-    time: "Summer 2021",
+    time: "June 2021 to Sept 2021",
     workDone: [
-      "Created a web application for configuration database interaction.",
-      "Designed intuitive layout reducing technical demand for PMs and engineers.",
-      "Implemented type-checking, version history, and access control.",
+      "Created a full-stack web application for owners to more effectively interact with a configuration database containing several tables.",
+      "Designed an intuitive layout that simplified the workflow for software engineers and project managers.",
+      "Implemented type-checking, version history, and access control to limit bugs and keep track of changes.",
     ],
   },
   {
     title: "Undergraduate Researcher",
-    company: "VCLA UCLA",
-    time: "Oct 2019 — Jun 2021",
+    company: "Center for Vision, Cognition, Learning & Autonomy (UCLA)",
+    time: "Oct 2019 to June 2021",
     workDone: [
-      "Developed real-time optimal plans for collaborative virtual agents in 3-D kitchens.",
-      "Generated dynamic scene graphs out of complex 3-D environments.",
+      "Developed optimal plans, in real time, for virtual agents to collaborate and cook meals together in 3-D photo-realistic kitchens.",
+      "Generated dynamic scene graphs out of complex 3-D environments, allowing AI agents to more easily infer and plan in their environment.",
     ],
   },
   {
     title: "Information Security Intern",
     company: "Lumentum",
-    time: "Summer 2020",
+    time: "June 2020 to Sept 2020",
     workDone: [
-      "Created a web dashboard for real-time security event alerting.",
-      "Centralized system health data from numerous sources into a single-page dashboard.",
+      "Created a web dashboard giving the Information Security team real-time alerting of security events and trends.",
+      "Improved the workflow for security admins to check system health by centralizing data from numerous sources onto clear graphs on a single page.",
     ],
   },
 ];
 
 const TECHNOLOGIES = [
   {
+    title: "AdTech",
+    techs: [
+      "Ad Serving",
+      "Ad Decisioning",
+      "Targeting",
+      "Deals",
+      "Frequency Capping",
+      "Audio",
+      "Video",
+      "Display",
+    ],
+  },
+  {
     title: "Backend",
     techs: ["Java (Spring)", "TypeScript & Node.js", "Python (Django/Flask)"],
   },
   {
-    title: "Frontend",
+    title: "Frontend & Mobile",
     techs: [
-      "iOS (Swift/Obj-C)",
-      "Android (Java/Kotlin)",
       "React",
       "Next.js",
       "Tailwind",
+      "iOS (Swift/Obj-C)",
+      "Android (Java/Kotlin)",
     ],
   },
   {
+    title: "AWS",
+    techs: ["EC2", "ECS & Fargate", "Lambda", "SQS & SNS", "CloudWatch", "IAM"],
+  },
+  {
     title: "Databases",
-    techs: ["Redis (AWS)", "DynamoDB (AWS)", "S3 (AWS)", "SQL", "MongoDB"],
+    techs: ["DynamoDB", "Redis (ElastiCache)", "SQL (RDS)", "MongoDB", "S3"],
+  },
+  {
+    title: "AI Tools",
+    techs: ["Claude Code", "Codex", "Kiro"],
   },
   {
     title: "Research",
@@ -125,7 +149,7 @@ export default function Experience() {
         {/* Right Column: Skills & Education */}
         <aside className="basis-[38%] grow">
           <section className="mb-8">
-            <h2 className={styles.primaryHeader}>Technologies</h2>
+            <h2 className={styles.primaryHeader}>Skills</h2>
             <div className="space-y-2">
               {TECHNOLOGIES.map((tech) => (
                 <TechExperience key={tech.title} {...tech} />

@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "export NODE_ENV=production && next build",
+    "dev": "npm run resume && next dev",
+    "resume": "node scripts/build-resume.mjs",
+    "build": "npm run resume && export NODE_ENV=production && next build",
     "start": "next start",
     "prepare": "husky",
     "format": "prettier --write ."
@@ -23,6 +24,7 @@
     "@eslint/css": "^0.14.1",
     "@eslint/json": "^1.0.1",
     "@eslint/markdown": "^7.5.1",
+    "@myriaddreamin/typst-ts-node-compiler": "^0.7.0",
     "eslint": "^8.57.1",
     "eslint-config-next": "^15.5.12",
     "eslint-config-prettier": "^10.1.8",
